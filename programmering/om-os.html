@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarhus Streetfood</title>
+    <link rel="shortcut icon" href="img/aasf-favicon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--mobile wrap så vi kan få programmere i mobil skerm størrelse-->
+    <div class="mobile-wrap">
+    <!--header og navigations bar-->
+    <header>
+        <div class="container flex-nav">
+            <figure class="nav-header">
+                <a href="./index.html"><img src="./img/logo.webp" alt="aarhus Streetfood logo" id="logo"></a>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </figure>
+            <nav class="nav-links" id="nav-links">
+                <ul>
+                    <li><a href="#">Restauranter</a></li>
+                    <li><a href="./om-os.html">Om Os</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!--Banner til frokost tilbudet-->
+    <aside class="top-banner">
+        <h4>Frokost Tilbud </h4>
+        <p>Man - Tor : kl. 11.30 - 15.00</p> 
+    </aside>
+    
+    <!--main content på om os siden-->
+    <main id="om-os">
+    <h1>Om Aarhus Street food</h1>
+    
+    <!--divs til wrap på siden, så det virker til desktop-->
+    <div id="om-os-wrap">
+    <div id="om-os-container">
+         
+    <!--Find Os kortet-->
+         <section id="find-os" class="om-os-indhold">
+            <h2>FIND OS</h2>
+                <figure >
+                <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.325648074226!2d10.207089115858949!3d56.15147398066181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3f902c893789%3A0x19bb52fd461e313b!2sAarhus%20Street%20Food!5e0!3m2!1sda!2sdk!4v1668420561672!5m2!1sda!2sdk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+        </section>
+
+    <!--FAQ sektionen-->
+        <section id="faq" class="om-os-indhold">
+            <h2>FAQ</h2>
+                <article>
+                    <h3>Parkering</h3>
+                        <p>Der er 150 betalings parkeringpladser lige bag Garagen med garanteret plads til din bil.</p> 
+                
+                    <h3>Street Credits og Gavekort</h3>
+                        <p>Street Credits er Aarhus Street Foods egen møntfod. De er perfekte til et selskab, da de kan købes samlet i Den Blå Bar og så deles ud til dine gæster. Street Credits kan benyttes i alle køkkener og barer. Skal du bruge mange, kan de forudbestilles på booking@aarhusstreetfood.com, så sørger vi for at de ligger pakket og klar.
+                        Gavekort kan købes online her</p>
+
+                    <h3>Medbragt mad og drikkevarer</h3>
+                        <p>Der må ikke medbringes egen mad eller drikkevarer i Garagen eller på vores udearealer.</p>
+
+                    <h3>Hunde</h3>
+                        <p>Søde og rare hunde i snor er meget velkomne både ude og inde.</p>    
+
+                    <h3>Glemte sager</h3>
+                        <p>Kontakt Den Blå Bar i indgangen - eller send os en mail kontakt@aarhusstreetfood.com</p>
+
+                    <h3>Street Food Galleriet og Kreative Ideer</h3>
+                        <p>Har du en udstilling til vores lille kaffebars galleri eller en awesome ide til et kreativt add-on til Garagen skal du fluks sende os en mail på kontakt@aarhusstreetfood.com</p>
+                </article>
+        </section>
+</div>
+
+    <!--Kortoversigt over street food restauranterne-->
+        <section id="kort-oversigt" class="om-os-indhold">
+            <h2>KORT-OVERSIGT</h2>
+                <figure>
+                    <img class="kort-oversigt" src="img/kortoversigt.webp" alt="kort over street food restauranterne">
+                </figure>
+        </section>
+    </div>
+    </main>
+    
+    <!--footeren-->
+        <footer>
+            <section id="footer-links">
+                <a href="#">NYHEDSBREV</a>
+                <a href="#">GAVEKORT</a>
+            </section>
+            <section id="footer-info">
+                <div class="abn-tider">
+                    <h4>Åbningstider</h4>
+                    <p>Mandag - Søndag: <br> kl. 11:30 - 21:00</p>
+                </div>
+                <div class="adresse">
+                    <h4>Adresse</h4>
+                    <p>Ny Banegårdsgade 46 <br> 8000 Aarhus C</p>
+                </div>
+                <div class="some">
+                    <h4>Sociale Medier</h4>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </section>
+        </footer>
+        
+         <!--indkøbs kurv som står fast på siden-->
+        <figure id="din-ordre">
+            <a href="./din-bestilling.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </figure>
+    
+    <!--vores javascript-->
+    <script src="./js/app.js"></script>
+</div>
+</body>
+</html>

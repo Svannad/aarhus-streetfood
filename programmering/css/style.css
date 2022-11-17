@@ -1,0 +1,568 @@
+/* Skerm Størelser
+Mobile: 480px
+Break Point 1: 768px
+Break Point 2: 1024px
+Break Point 3: 1200px*/
+
+/* Google Fonts
+font-family: 'Karla', sans-serif;
+font-family: 'Staatliches', cursive;*/
+
+
+/*Fælles Kodning*/
+body {
+    margin: 0;
+}
+
+.mobile-wrap {
+    max-width: 480px;
+    margin: auto;
+    background-color: rgb(255, 249, 247);
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    color: lightskyblue;
+    text-shadow: 2px 2px rgb(13, 123, 196);
+    text-align: center;
+    font-size: 2.5rem;
+    cursor: default;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    color: rgb(13, 123, 196);
+    text-shadow: 2px 2px lightskyblue;
+    text-align: center;
+    cursor: default;
+}
+
+h3 {
+    font-family: 'Karla', sans-serif;
+    color: rgb(31, 32, 33);
+    text-align: center;
+    cursor: default;
+}
+
+p {
+    font-family: 'Karla', sans-serif;  
+    text-align: center;
+    color: rgb(31, 32, 33);
+    cursor: default;
+}
+
+h4 {
+    font-family: 'Karla', sans-serif; 
+    cursor: default;   
+}
+
+.btn {
+    text-decoration: none;
+    color: rgb(13, 123, 196);
+    background-color: lightskyblue;
+    padding: 2px 7px;
+    border-radius: 2px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px #4476b9;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+/* Inkøbskurven som er fixed på siden*/
+#din-ordre {
+    position: fixed;
+    bottom: 0.5em;
+    right: -1em;
+}
+
+#din-ordre a {
+    font-size: 1.7rem;
+    background-color: lightskyblue;
+    border: 2px rgb(13, 123, 196) dashed;
+    padding: 0.5em 0.64em;
+    border-radius: 50%;
+    color: rgb(13, 123, 196);
+}
+
+#din-ordre a:hover {
+    color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+/*header og navigations bar*/
+.container {
+    margin: auto -1em;
+}
+
+#logo {
+    width: 90px;
+}
+
+header {
+    background-color: #f3b5d3;
+}
+
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle {
+    border: transparent;
+    background-color: transparent;
+    color: #4476b9;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+}
+
+.nav-links ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #4476b9;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-links ul li a:hover {
+    color: #fff;
+}
+
+.nav-open {
+    height: 20vh;
+}
+
+/*tilbuds banner*/
+
+.top-banner h4, .top-banner p{
+    color: #fff;
+    margin: 0.5rem;
+    text-shadow: 2px 2px #e99c3b;
+}
+
+.top-banner h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.top-banner{
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    justify-content: center;
+}
+
+/*Forside*/
+
+#velkommen {
+    background-image: url(../img/velkommen.jpg);
+    background-size: cover;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#velkommen p {
+    font-weight: 600;
+    padding: 0 10px;
+    line-height: 1.3rem;
+    margin-top: -1em;
+}
+
+
+
+/*infographic*/
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info img {
+    width: 60%;
+}
+
+/*bestil her*/
+#bestil-her {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#search-bar {
+    width: 50%;
+    height: 30px;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px #4476b9;
+}
+
+#search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+}
+
+#search-bar button i {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(13, 123, 196);
+}
+    
+#search-bar button i:hover {
+        color: white;
+}
+    
+#search-bar button {
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+}
+
+#img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#img-wrap img {
+    width: 45%;
+    margin: 0.5em;
+}
+
+#img-wrap img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgb(31, 32, 33, 0.8);
+}
+
+/*Om Os*/
+
+#faq{
+    margin: 20px;
+}
+
+.kort-oversigt
+{ 
+    width: 100%;
+}
+
+#google-map{
+    width: 100%;
+    height: 25em;
+}
+
+.om-os-indhold p {
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+
+/*Din Bestilling*/
+
+.bestil-img {
+    width: 6em;   
+}
+
+.bestilling {
+    display: grid;
+    flex-direction: column;
+    margin: 2em 2em;
+    border: 0.75px rgb(235, 235, 235) solid;
+}
+
+.vare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 1em;
+}
+
+.bestilling p, .bestilling h3 {
+    text-align: left;
+}
+
+.bestilling h2 {
+    text-align: left;
+    color: rgb(31, 32, 33);
+    text-shadow: none;
+}
+
+#laver h3, #done h3 {
+    color: #fff;
+    padding: 0 0.5em;
+}
+
+#laver {
+    background-color: #4476b9;
+}
+
+#done {
+    background-color: #508d59;
+}
+
+.pris {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(235, 235, 235);
+    padding: 0 1em;
+}
+
+#madbod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#madbod img {
+    width: 80%;
+}
+
+/*footer*/ 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3b5d3;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer-links a {
+    padding: 0 25px;
+    text-decoration: none;
+    color: rgb(13, 123, 196);
+    font-family: 'Karla', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#footer-links a:hover {
+    color: #fff;
+}
+
+#footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer-info div {
+    padding: 10px;
+}
+
+#footer-info div h4 {
+    text-align: left;
+   color: rgb(31, 32, 33);
+
+}
+
+#footer-info div p {
+    text-align: left;
+    color: rgb(31, 32, 33);
+}
+
+.some i {
+    font-size: 1.7rem;
+    color: rgb(13, 123, 196);
+    padding-left: 5px;
+}
+
+.some i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+/*responsive*/
+
+@media screen and (min-width: 480px) {
+    .mobile-wrap {
+      max-width: 768px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #footer-info {
+        padding: 0 1em;
+    }
+
+    .bestilling {
+     margin: 4em 4em;
+    }
+
+  }
+  
+  @media screen and (min-width: 768px) {
+    .mobile-wrap {
+      max-width: 1024px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #velkommen {
+        height: 21em;
+    }
+
+    #img-wrap img {
+        width: 30%;
+    }
+
+    #footer-info {
+        padding: 0 3em;
+    }
+
+    .bestilling {
+        margin: 4em 6em;
+       }
+
+    .info img {
+        width: 30%;
+        padding: 0 2em;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .mobile-wrap {
+      max-width: 1200px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    header {
+        display: block;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .flex-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        height: auto;
+    }
+
+    .nav-links ul li {
+        display: inline-block;
+        padding: 0 2em;
+        margin-right: 1em;
+    }
+
+    #footer-info {
+        padding: 0 7em;
+    }
+
+    #velkommen {
+        height: 27em;
+    }
+
+    #velkommen p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    #velkommen h1 {
+        height: 5rem;
+    }
+    
+    .btn {
+        font-size: 1.7rem;
+    }
+
+    #img-wrap img {
+        width: 23%;
+    }
+    
+    #main-bestil {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #din-bestilling {
+        width: 50%;
+    }
+
+    #madbod {
+        width: 50%;
+    }
+
+    #om-os-wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #om-os-container{
+        width: 50%;
+    }
+
+    #kort-oversigt{
+        width: 50%;
+    }
+
+    .info img {
+        width: 20%;
+        padding: 0 3em;
+    }
+
+  }
+
+  
+  @media screen and (min-width: 1200px) {
+    .mobile-wrap {
+      max-width: 100%;
+    }
+    
+    #footer-info {
+        padding: 0 15em;
+    }   
+  }
+ 

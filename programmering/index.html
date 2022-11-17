@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarhus Streetfood</title>
+    <link rel="shortcut icon" href="img/aasf-favicon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--mobile wrap så vi kan få programmere i mobil skerm størrelse-->
+    <div class="mobile-wrap">
+    <!--header og navigations bar-->
+        <header>
+            <div class="container flex-nav">
+                <figure class="nav-header">
+                    <a href="./index.html"><img src="./img/logo.webp" alt="aarhus Streetfood logo" id="logo"></a>
+                    <button class="nav-toggle" id="navToggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </figure>
+                <nav class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="#">Restauranter</a></li>
+                        <li><a href="./om-os.html">Om Os</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <!--Banner til frokost tilbudet-->
+    <aside class="top-banner">
+        <h4>Frokost Tilbud </h4>
+        <p>Man - Tor : kl. 11.30 - 15.00</p> 
+    </aside>
+
+    <!--main content på forsiden-->
+    <main>
+    <!--Velkommen til hjemmesiden-->
+    <section id="velkommen">   
+        <h1>VELKOMMEN</h1>
+        <p>Kig forbi DSB's gamle busgarage og nyd frisk og hjemmelavet mad <br> fra hele verden - autentisk og ærlig mad.</p>
+        <h3><a href="./om-os.html" class="btn">Find Os</a></h3>
+    </section> 
+    
+    <!--infographic step by step-->
+    <h2>Bestil Online og Undgå Køen</h2>
+    <section class="info">
+        <img src="./img/find-og-bestil.webp" alt="find og bestil">
+        <img src="./img/hent-og-betal.webp" alt="hent og betal">
+        <img src="./img/nyd-mad.webp" alt="nyd din mad">
+    </section>
+
+    <!--online bestilling--> 
+    <section id="bestil-her">
+        <h2>Bestil Her</h2>
+        <h4><a href="#" class="btn">Filter</a> </h4>
+        <form action="search" id="search-bar">
+            <input type="text" name="q" placeholder="mere specifikt, søg her...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button> 
+        </form>
+        <h2>Restauranter</h2>
+        <div id="img-wrap">
+                <img src="./img/super-bao.webp" alt="super bao madbod">
+                <img src="./img/the-burger.webp" alt="the burger madbod">
+                <img src="./img/danyar.webp" alt="danyar fish and chips madbod">
+                <img src="./img/tuk-tuk.webp" alt="tuk tuk madbod">
+                <img src="./img/kaffebaren.webp" alt="kaffebaren madbod">
+                <img src="./img/kagen.webp" alt="kagen madbod">
+                <img src="./img/la-rossa.webp" alt="la rossa madbod">
+                <img src="./img/bap.webp" alt="bap madbod">
+        </div>
+    </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <section id="footer-links">
+            <a href="#">NYHEDSBREV</a>
+            <a href="#">GAVEKORT</a>
+        </section>
+        <section id="footer-info">
+            <div class="abn-tider">
+                <h4>Åbningstider</h4>
+                <p>Mandag - Søndag: <br> kl. 11:30 - 21:00</p>
+            </div>
+            <div class="adresse">
+                <h4>Adresse</h4>
+                <p>Ny Banegårdsgade 46 <br> 8000 Aarhus C</p>
+            </div>
+            <div class="some">
+                <h4>Sociale Medier</h4>
+                <a href="https://www.facebook.com/aarhusstreetfood/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/aarhusstreetfood/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </section>
+    </footer>
+    
+    <!--indkøbs kurv som står fast på siden-->
+    <figure id="din-ordre">
+        <a href="./din-bestilling.html"><i class="fa-solid fa-bag-shopping"></i></a>
+    </figure>
+
+    <!--vores javascript-->
+    <script src="./js/app.js"></script>
+</div>
+</body>
+</html>
